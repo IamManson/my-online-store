@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Bikes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--Ion Icons Import-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!--External CSS Link-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrapStyles.css">
+    <!--jQuery Library Import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .table .table-hover {
+            text-align: center;
+        }
+
+        .zoom {
+            transition: transform .2s;
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -webkit-transform: scale(1.1);
+            /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body class="container bg-light">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a><img id="companyLogo" src="images/Logo.png" alt="company logo" height="50" width="50"
+                class="mr-3 rounded" /></a>
+        <a class="navbar-brand" href="#">Manson's Bike Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="bikes.html">Bikes<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="cart">
+                    <a class="nav-link" href="cart.html" id="navcart"><ion-icon name="basket"></ion-icon>Cart <span>0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="headinGallery">
+        <h2 class="text-center text-white pt-4 pb-4 bg-danger">Titan Racing Bikes</h2>
+    </div>
+<br>
+<div class="couponContainer">
+    <div class="row">
+        <div class="coupon col-lg-12">
+            Want a R1000 off your purchase? Use Discount Code <span class="titan10">TITAN10</span>!
+        </div>
+    </div>
+</div>
+    <br>
+    <!--Catalogue-->
+    <div class="catalogue">
+        <div class="row">
+            <h3 class="col-lg-12 bg-light rounded text-danger">Full Suspension</h3>
+        </div>
+        <div class="row">
+            <article class="col-lg-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21CypherRSCarbonUltimate.jpg" alt="cypher rs ult carbon"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21CypherRSCarbonUltimate">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Cypher RS Ultimate Carbon</h5>
+                <p>A short travel 100mm bike with a carbon fiber front and rear triangle.</p>
+                <h3>R45,999.00</h3>
+                <a href="cypherrsultimate.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart1">Add To Cart</a> <!--Edit when cart is complete-->
+            </article>
+            <article class="col-lg-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21CypherRSCarbonTeam.jpg" alt="cypher rs team carbon"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21CypherRSCarbonTeam">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Cypher RS Team Carbon</h5>
+                <p>A flip chip allows the ability to customise the geometry to the preference of the rider or trail
+                    conditions.</p>
+                <h3>R42,999.00</h3>
+                <a href="cypherrsteam.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart2">Add To Cart</a>
+            </article>
+            <article class="col-lg-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21Cypher120CarbonEmpire.jpg" alt="cypher empire carbon"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21Cypher120CarbonEmpire">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Cypher Empire Carbon</h5>
+                <p> A progressive 120mm race bike with a carbon fiber front and rear triangle.</p>
+                <h3>R35,999.00</h3>
+                <a href="cypherempire.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart3">Add To Cart</a>
+            </article>
+        </div>
+
+        <div class="row">
+            <h3 class="col-lg-12 bg-light rounded text-danger">Hardtail</h3>
+        </div>
+        <div class="row">
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21RogueCruz.jpg" alt="rogue cruz"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded"  tag="M21RogueCruz">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Rogue Cruz</h5>
+                <p>Lightweight Hydroformed Rogue Aluminium Frame is based on our race proven Drone XC frame.</p>
+                <h3>R28,999.00</h3>
+                <a href="roguecruz.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart4">Add To Cart</a>
+            </article>
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21RogueDash.jpg" alt="rogue dash"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21RogueDash">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Rogue Dash</h5>
+                <p>100mm Rockshox Judy Silver Air Fork soaks up all the bumps and offers racing performance.</p>
+                <h3>R25,999.00</h3>
+                <a href="roguedash.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart5">Add To Cart</a>
+            </article>
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21RogueRyde.jpg" alt="rogue ryde"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21RogueRyde">
+                    </div>
+                </div>
+                <h5 class="articleHeadings">2021 Rogue Ryde</h5>
+                <p>A 750mm wide handlebar paired with a short stem create a confidence inspiring cockpit for the rider.
+                </p>
+                <h3>R21,999.00</h3>
+                <a href="rogueryde.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart6">Add To Cart</a>
+            </article>
+        </div>
+
+        <div class="row">
+            <h3 class="col-lg-12 bg-light rounded text-danger">Ladies</h3>
+        </div>
+        <div class="row">
+
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21RogueCalypsoNova.jpg" alt="calypso rogue nova"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded p-2" tag="M21RogueCalypsoNova">
+                    </div>
+                </div>
+                <h5 class="text-center">2021 Calypso Rogue Nova</h5>
+                <p>Multi-user 5 Year Warranty ensures that you are buying quality.</p>
+                <h3>R25,999.00</h3>
+                <a href="calypsoroguenova.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart7">Add To Cart</a>
+            </article>
+        </div>
+
+        <div class="row">
+            <h3 class="col-lg-12 bg-light rounded text-danger">Junior</h3>
+        </div>
+        <div class="row">
+
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21Calypso26.jpg" alt="calypso 26"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21Calypso26">
+                    </div>
+                </div>
+                <h5 class="text-center">2021 Calypso 26" Disc</h5>
+                <p>An all-new Lightweight Hydroformed Aluminium Frame designed specifically for Juniors.</p>
+                <h3>R6,999.00</h3>
+                <a href="calypso26disc.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart8">Add To Cart</a>
+            </article>
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21Calypso24V.jpg" alt="calypso 24V"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21Calypso24V">
+                    </div>
+                </div>
+                <h5 class="text-center">2021 Calypso 24" V-Brake</h5>
+                <p>Designed to withstand all the bumps, knocks and crashes your little shredder throws at it.</p>
+                <h3>R5,999.00</h3>
+                <a href="calypso24.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart9">Add To Cart</a>
+            </article>
+            <article class="col-md-3 p-2 m-1 shadow rounded bg-light text-center">
+                <div class="border border-light">
+                    <div class="zoom">
+                        <img src="images/M21Hades24V.jpg" alt="hades 24V"
+                            class="p-1 img-fluid img-thumbnail bg-light rounded" tag="M21Hades24V">
+                    </div>
+                </div>
+                <h5 class="text-center">2021 Hades 24" V-Brake</h5>
+                <p>Shimano 8 Speed Gears are robust and offer easy shifting for young riders.</p>
+                <h3>R5,199.00</h3>
+                <a href="Hades24.html" class="btn btn-outline-dark p-2">Enquire Now</a>
+                <a href="#" class="add-cart btn btn-outline-dark p-2" id="cart10">Add To Cart</a>
+            </article>
+        </div>
+    </div>
+
+    <br>
+    <!--Table of bikes -->
+    <table class="table table-hover" style="text-align: center;">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="4" id="headinggallery"> Accessories</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="1"> Grips</th>
+                <td colspan="1">Stealth Grip</td>
+                <td colspan="1">Club Grip</td>
+                <td colspan="1">Ergo Grip</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="1">Tubes</th>
+                <td colspan="1">Presta MTB Tubes</td>
+                <td colspan="1">Shrader MTB Tubes</td>
+                <td colspan="1">Road Tubes</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="1">CO2</th>
+                <td colspan="1">25G CO2 Cartridge</td>
+                <td colspan="1">16G CO2 Cartridge</td>
+                <td colspan="1">Airburst Inflator Pack</td>
+
+            </tr>
+            <tr>
+                <th scope="row" colspan="1">Pumps</th>
+                <td colspan="1">Airsurge</td>
+                <td colspan="1">Airblast</td>
+                <td colspan="1">Airraze</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!--Form-->
+    <form class="p-4 rounded bg-dark text-center">
+        <h2 class="text-danger">Own Your Dream Bike Today!</h2>
+        <div class="row">
+            <div class="col-md-6 text-white">
+                <label for="form-field-name1">First Name: </label>
+                <input type="text" class="form-control" id="form-field-name1" placeholder="First name">
+            </div>
+            <div class="col-md-6 text-white">
+                <label for="form-field-name2">Last Name: </label>
+                <input type="text" class="form-control" id="form-field-name2" placeholder="Last name">
+            </div>
+            <div class="form-group col-md-12 pt-4 text-white">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone
+                    else.</small>
+            </div>
+
+            <div class="form-group col-md-12 pt-4 text-white">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Add to Mailing List</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger btn-block mb-4">Submit</button>
+    </form>
+
+<!--Footer-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Manson's Bike Shop</h3>
+
+        <p class="footer-links">
+            <a href="index.html">Home</a>
+            |
+            <a href="about.html">About</a>
+            |
+            <a href="bikes.html">Bikes</a>
+            |
+            <a href="contact.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2021 Manson's Bike Shop Pty. Ltd.</p>
+    </div>
+
+    <div class="footer-right">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>28 Fairy Lane, Utopia</span>
+                Cape Town, South Africa 7530</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+21 00 000 000</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:info@mansonbikes.co.za">info@mansonsbikes.co.za</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bikeStore.js"></script>
+</body>
+
+</html>

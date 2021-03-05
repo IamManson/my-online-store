@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manson's Bike Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--Ion Icons Import-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!--External CSS Link-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrapStyles.css">
+    <!--jQuery Library Import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .home-left {
+            text-align: center;
+        }
+
+        .card-group {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="container bg-light">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a><img id="companyLogo" src="images/Logo.png" alt="company logo" height="50" width="50"
+                class="mr-3 rounded" /></a>
+        <a class="navbar-brand" href="#">Manson's Bike Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bikes.html">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="cart">
+                    <a class="nav-link" href="cart.html" id="navcart"><ion-icon name="basket"></ion-icon>Cart <span>0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="border border-dark">
+        <img src="images/matt-saling.jpg" alt="road bicycle" class="img-fluid p-1 border-dark" id="headerBike">
+    </div>
+
+    <!--Company Introduction-->
+    <div class="intro">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="home-left">
+                    <h2 id="welcome">Welcome To Manson's Bike Shop</h2>
+                    <p class="introduction">We are your one-stop-shop for all your cycling needs.</p>
+                    <p class="introduction">We have a great team of experts that are always ready to assist with all your queries.
+                        Chat to the team for the best deals on our stock, accessories and services. Happy pedalling!
+                    </p>
+                    <button type="button" class="btn btn-outline-dark btn-sml" id="magic-out">Click For Magic</button>
+                    <button type="button" class="btn btn-outline-dark btn-sml" id="magic-in">Click For More Magic</button>
+                    <button type="button" class="btn btn-outline-dark btn-sml" id="stop-magic">Stop Magic</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="home-right">
+                    <div class="border border-light">
+                        <img src="images/Logo.png" alt="company logo" class="img-fluid p-1 border-dark" id="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+
+    <!--Highlighted Brand-->
+    <div class="row no-gutters">
+        <div class="col-lg-6">
+            <div class="border border-dark">
+                <img src="images/Valerian-33.jpg" alt="road bike" class="img-fluid p-1" id="valerian">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="bg-dark">
+                <div class="p-4">
+                    <div style="text-align: center;">
+                        <div class="image-container" id="trlogo">
+                            <div class="border border-dark">
+                                <img src="images/Titan-Racing-png.png" alt="titan racing logo" class="img-fluid pt-3">
+                            </div>
+                        </div>
+                        <div class="text-white">
+                            <p class="mb-4 mt-3 p-2">In ’05 Titan Racing started with only one bike,
+                                filling a gap in
+                                the
+                                market. Combining our passion for bikes and the empowerment they bring, we’ve grown
+                                into
+                                a bike brand that’s focused on you, the rider.</p>
+                        </div>
+                        <div class="pb-4">
+                            <a href="bikes.html" class="btn btn-danger btn-lg active" role="button"
+                                aria-pressed="true">View Range</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <hr>
+    <!--Accordian Drop-down-->
+    <h3 class="rangeHeading" style="text-align: center; padding-top: 3px; padding-bottom: 3px;">Our Current Ranges:</h3>
+    <ul id='accordion' class='accordion'>
+        <li>
+            <div class="heading">Titan Racing</div>
+            <ul class="submenu">
+                <li>Titan Racing Road</li>
+                <li>Titan Racing MTB</li>
+                <li>Titan Racing Kids</li>
+                <li>Titan Racing Leisure</li>
+            </ul>
+        </li>
+        <li>
+            <div class="heading">Cannondale</div>
+            <ul class="submenu">
+                <li>Cannondale Road</li>
+                <li>Cannondale MTB</li>
+                <li>Cannondale E-Bikes</li>
+            </ul>
+        </li>
+        <li>
+            <div class="heading">Scott</div>
+            <ul class="submenu">
+                <li>Scott Road</li>
+                <li>Scott MTB</li>
+                <li>Scott E-Bikes</li>
+            </ul>
+        </li>
+        <li>
+            <div class="heading">Bianchi</div>
+            <ul class="submenu">
+                <li>Bianchi Road</li>
+                <li>Bianchi E-Bikes</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <!--News Section-->
+    <h2>Lastest News</h2>
+    <div class="card-group">
+        <div class="card">
+            <div class="border border-dark">
+                <img src="images/titanarticle.jpg" alt="titan drone hardtail" class="img-fluid p-1">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Titan Racing Launch All-New Drone Hardtail</h4>
+                <p class="card-text">A true race ready aluminium hardtail that ticks all the right boxes. Aluminium
+                    hardtails still make up a large portion of mountain bike sales in South Africa and the world
+                    throughout.</p>
+                <a href="https://www.titanracingbikes.com/titan-racing-launch-all-new-drone-hardtail/"
+                    class="btn btn-danger btn-outline-danger p-2" role="button" aria-pressed="true">READ</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="border border-dark">
+                <img src="images/yanick-ep6-hero.png" alt="suspension fix" class="img-fluid p-1">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">How To Set-Up Your Suspension</h4>
+                <p class="card-text">There is no secret to setting up your mountain bike’s suspension correctly. Once
+                    dialed, your suspension will make the difference on the trail! SCOTT-SRAM MTB Racing’s
+                    Yanick-the-Mechanic fine tunes...</p>
+                <a href="https://www.scott-sports.com/za/en/page/how-to-set-up-your-suspension"
+                    class="btn btn-danger btn-outline-danger p-2" role="button" aria-pressed="true">READ</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="border border-dark">
+                <img src="images/chasingtrail.jpg.png" alt="titan drone hardtail" class="img-fluid p-1">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Chasing Trail Series with SCOTT Sports</h4>
+                <p class="card-text">Follow along with the SCOTT sports team as they go searching for the world's best
+                    singletrack. It's a fantastic series to follow as they travel from France to North Carolina to Ibiza
+                    and more.</p>
+                <a href="https://www.scott-sports.com/za/en/page/chasing-trail"
+                    class="btn btn-danger btn-outline-danger p-2" role="button" aria-pressed="true">READ</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Manson's Bike Shop</h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="about.html">About</a>
+                |
+                <a href="bikes.html">Bikes</a>
+                |
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© 2021 Manson's Bike Shop Pty. Ltd.</p>
+        </div>
+
+        <div class="footer-right">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>28 Fairy Lane, Utopia</span>
+                    Cape Town, South Africa 7530</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+21 00 000 000</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@mansonbikes.co.za">info@mansonsbikes.co.za</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bikeStore.js"></script>
+</body>
+<!--Sources:
+    Bradley, S., 2017. 4 CSS Filters For Adjusting Color - Vanseo Design. [online] Vanseo Design. Available at: <https://vanseodesign.com/css/4-css-filters-for-adjusting-color/> [Accessed 31 January 2021].
+    2018. CSS Notes for Professionals. Goalkicker.com.
+    Material Design for Bootstrap. 2021. eCommerce Shopping Cart - Bootstrap 4 & Material Design 2.0. Examples & Tutorial. [online] Available at: <https://mdbootstrap.com/docs/b4/jquery/ecommerce/design-blocks/shopping-cart/> [Accessed 22 February 2021].
+    Eduonix Blog. 2019. How to Build a Responsive Website Footer Using HTML and CSS. [online] Available at: <https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/> [Accessed 29 January 2021].
+    Tutorialrepublic.com. 2021. jQuery Tutorial - An Ultimate Guide for Beginners. [online] Available at: <https://www.tutorialrepublic.com/jquery-tutorial/> [Accessed 23 February 2021].
+    2018. JavaScript Shopping Cart Tutorial for Beginners. [video] Available at: <https://www.youtube.com/watch?v=YeFzkC2awTM> [Accessed 27 February 2021].
+    Sampaio, T., 2020. JavaScript Shopping Cart Tutorial. [video] Available at: <https://www.youtube.com/watch?v=B20Getj_Zk4> [Accessed 22 February 2021].
+    Titan Racing Bikes. 2021. [online] Available at: <https://www.titanracingbikes.com/> [Accessed 25 January 2021].
+    W3schools.com. 2021. CSS Tutorial. [online] Available at: <https://www.w3schools.com/css/default.asp> [Accessed 30 January 2021].-->
+
+</html>

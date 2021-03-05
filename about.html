@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--Ion Icons Import-->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!--External CSS Link-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrapStyles.css">
+    <!--jQuery Library Import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .card-deck {
+            text-align: center;
+        }
+
+        .testimonial {
+            background-color: rgb(194, 5, 5);
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            from {
+                background-color: rgb(194, 5, 5)
+            }
+
+            to {
+                background-color: grey;
+            }
+        }
+
+        .card-img-top {
+            padding: 1px;
+            border-radius: 10px;
+        }
+
+        .backgroundHeader {
+            filter: grayscale(75%);
+        }
+    </style>
+</head>
+
+<body class="container bg-light">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a><img id="companyLogo" src="images/Logo.png" alt="company logo" height="50" width="50"
+                class="mr-3 rounded" /></a>
+        <a class="navbar-brand" href="#">Manson's Bike Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bikes.html">Bikes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="cart">
+                    <a class="nav-link" href="cart.html" id="navcart"><ion-icon name="basket"></ion-icon>Cart <span>0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="border border-dark">
+        <div class="p-5 text-center bg-image" style="
+    background-image: url('https://images.unsplash.com/photo-1511877150299-3622fc88aee3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3750&q=80');
+    height: 150px;
+    width: auto;
+  " id="backgroundHeader">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="row">
+                        <div style="text-align: center;">
+                            <div class="text-danger">
+                                <h2 class="mb-3" style="font-weight: bold;">ABOUT US</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Store History-->
+    <div class="intro">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="intro-left">
+                    <img src="images/tom-austin.jpg" alt="bicycle store" class="img-fluid p-1 border-dark"
+                        id="bicycle-shop">
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="intro-right">
+                    <h4>We are a bicycle shop in Durbanville that was started in 2015.</h4>
+                    <p>It is run by co-owners John and Jane Doe. Our team are passionate about all things cycling and
+                        bringing you the best service.</p>
+                    <p>We stock Titan Racing Bikes, Cannondale and SCOTT bikes as well as a wide range of accessories.
+                        We have a fantastic workshop to give your wheels the TLC it deserves. We offer basic, minor and
+                        major
+                        services as well as suspension services and wheel builds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!--Meet the team-->
+    <div class="card-deck">
+        <div class="card">
+            <div class="border border-dark">
+
+                <img class="card-img-top" src="images/nextbike.jpg" alt="John Doe">
+
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">John Doe | Co-Owner</h4>
+                <p class="bio">"My dad has many bicycles around the house when I was growing up and I just fell in love with them from a young age. Cycling gave me a freedom like no other and that's why Jane and I decided to take our love of cycling and open the shop."</p>
+                <button type="button" class="showBio btn btn-outline-danger" id="showBio">Show Bio</button>
+                <button type="button" class="hideBio btn btn-outline-danger" id="hideBio">Hide Bio</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="border border-dark">
+
+                <img class="card-img-top" src="images/blubel.jpg" alt="jane doe">
+
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Jane Doe | Co-Owner</h4>
+                <p class="bio">"I have been passionate about bicycles since the age of 15. I love everything about them and nothing is quite as relaxing as cruising around the city on a bicycle."</p>
+                <button type="button" class="showBio btn btn-outline-danger" id="showBio">Show Bio</button>
+                <button type="button" class="hideBio btn btn-outline-danger" id="hideBio">Hide Bio</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--testimonial-->
+    <div class="testimonial">
+        <h3 class="testimonial-title">TESTIMONIAL</h3>
+        <hr class="line">
+        <p class="testimonial-text" style="font-style: italic;">"Manson's Bike Shop is my FAVOURITE bike shop. Their
+            service is excellent, they are
+            incredibly helpful and friendly, their prices are great and they always have stop of just what I need. I'll
+            always recommend them."</p>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Manson's Bike Shop</h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="about.html">About</a>
+                |
+                <a href="bikes.html">Bikes</a>
+                |
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© 2021 Manson's Bike Shop Pty. Ltd.</p>
+        </div>
+
+        <div class="footer-right">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>28 Fairy Lane, Utopia</span>
+                    Cape Town, South Africa 7530</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+21 00 000 000</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@mansonbikes.co.za">info@mansonsbikes.co.za</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/bikeStore.js"></script>
+</body>
+
+</html>
