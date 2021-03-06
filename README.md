@@ -32,8 +32,8 @@ Project is created with:
 * HTML5
 * CSS
 * JavaScript ES6+ 
-* [jQuery!] (https://developers.google.com/speed/libraries/#jquery)
-* [Bootstrap 4!] (https://getbootstrap.com/docs/4.1/getting-started/download/) 
+* [jQuery] (https://developers.google.com/speed/libraries/#jquery)
+* [Bootstrap 4] (https://getbootstrap.com/docs/4.1/getting-started/download/) 
 
 ## Installation
 
@@ -45,7 +45,7 @@ Project is created with:
 
 To run this project, do the following: 
 
-1. [Download!] (https://git-scm.com/downloads) Git for Windows, Mac OS X or Linux/Unix
+1. [Download] (https://git-scm.com/downloads) Git for Windows, Mac OS X or Linux/Unix
 2. Install Git
 
 Now open your command prompt or terminal:
@@ -89,5 +89,5 @@ Done some work on this project? Submit your changes to the remote project on Git
 
 ## Credits
 
-Project created by [Kayla Manson!](https://github.com/IamManson) in 2021. 
-Find me on [LinkedIn!](https://dribbble.com/kayla-manson), [Github!](https://github.com/IamManson) and [Dribbble!](https://dribbble.com/kayla-manson). 
+Project created by [Kayla Manson](https://github.com/IamManson) in 2021. 
+Find me on [LinkedIn](https://dribbble.com/kayla-manson), [Github](https://github.com/IamManson) and [Dribbble](https://dribbble.com/kayla-manson). 
