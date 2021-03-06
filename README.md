@@ -32,8 +32,8 @@ Project is created with:
 * HTML5
 * CSS
 * JavaScript ES6+ 
-* [jQuery] (https://developers.google.com/speed/libraries/#jquery)
-* [Bootstrap 4] (https://getbootstrap.com/docs/4.1/getting-started/download/) 
+* [jQuery](https://developers.google.com/speed/libraries/#jquery)
+* [Bootstrap 4](https://getbootstrap.com/docs/4.1/getting-started/download/) 
 
 ## Installation
 
@@ -45,7 +45,7 @@ Project is created with:
 
 To run this project, do the following: 
 
-1. [Download] (https://git-scm.com/downloads) Git for Windows, Mac OS X or Linux/Unix
+1. [Download](https://git-scm.com/downloads) Git for Windows, Mac OS X or Linux/Unix
 2. Install Git
 
 Now open your command prompt or terminal:
@@ -75,17 +75,17 @@ Done some work on this project? Submit your changes to the remote project on Git
 ## Preview
 
 ### Main Products Page
-![Screenshot of product page] (https://github.com/IamManson/my-online-store/blob/main/images/screenshot_of_product_page.png)
+![Screenshot of product page](https://github.com/IamManson/my-online-store/blob/main/images/screenshot_of_product_page.png)
 
 ### Quick Add-To-Cart
 
-![Screenshot of quick add-to-cart] (https://github.com/IamManson/my-online-store/blob/main/images/cart_alert.png)
+![Screenshot of quick add-to-cart](https://github.com/IamManson/my-online-store/blob/main/images/cart_alert.png)
 
 ### Shopping Cart
-![Screenshot of shopping cart] (https://github.com/IamManson/my-online-store/blob/main/images/shopping_cart.png)
+![Screenshot of shopping cart](https://github.com/IamManson/my-online-store/blob/main/images/shopping_cart.png)
 
 ### Checkout Alert
-![Screenshot of checkout] (https://github.com/IamManson/my-online-store/blob/main/images/checkout_ref.png)
+![Screenshot of checkout](https://github.com/IamManson/my-online-store/blob/main/images/checkout_ref.png)
 
 ## Credits
 
